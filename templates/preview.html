@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Preview</title>
+</head>
+<body>
+    <h1>Preview: {{ file['title'] }}</h1>
+    
+    {% if 'image' in file['mimeType'] %}
+        <!-- For images, display the image -->
+        <img src="{{ file['alternateLink'] }}" alt="Image Preview" style="max-width: 600px;">
+    {% else %}
+        <p>This file type cannot be previewed directly. <a href="{{ file['webContentLink'] }}" download>Download</a></p>
+    {% endif %}
+
+    <br><br>
+    <a href="{{ url_for('index') }}">Back to File List</a>
+</body>
+</html>
