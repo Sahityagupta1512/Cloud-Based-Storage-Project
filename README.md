@@ -30,6 +30,22 @@ Improved UI/UX using modern frameworks like React or Vue.js.
 Conclusion:
 This system provides a secure and scalable solution for file storage and management, making it suitable for personal or business use. It serves as a strong foundation for future enhancements, including cloud integration and advanced security measures.
 
+List of commands used to run:
+
+Install Python and Virtual Environment: sudo apt install python3 python3-venv python3-pip -y
+
+Install Required Python Packages: pip install -r requirements.txt
+
+Create and Activate Virtual Environment: python3 -m venv venv
+source venv/bin/activate  # For Linux/macOS
+venv\Scripts\activate     # For Windows
+
+Using Flask: export FLASK_APP=app.py   # For Linux/macOS
+set FLASK_APP=app.py       # For Windows
+flask run
+
+Running the python file: python3 app.py
+
 Tech Expert:
 Krison Dmello - www.linkedin.com/in/krison-dmello-5857712aa
 Sahitya Gupta - https://www.linkedin.com/in/sahitya-satyendra-gupta-9657311ab
